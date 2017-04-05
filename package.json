@@ -1,0 +1,8 @@
+{
+  "name": "ultrasites-vue-content-slider",
+  "version": "0.0.1",
+  "devDependencies": {
+    "vue":"latest",
+    "jquery":"latest"
+  }
+}

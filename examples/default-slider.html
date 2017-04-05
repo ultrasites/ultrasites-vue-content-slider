@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ultrasites-vue-content-slider :: Default Slider</title>
+    <link rel="stylesheet" href="../component/style/ultrasites-vue-content-slider-style.css" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <style>
+        article{width:100%; height: 500px;}
+    </style>
+</head>
+<body >
+<div id="default-slider">
+    <ultrasites-vue-content-slider :settings="settings"></ultrasites-vue-content-slider>
+</div>
+<script src="../node_modules/jquery/dist/jquery.js"></script>
+<script src="../node_modules/vue/dist/vue.js"></script>
+<script src="../component/ultrasites-vue-content-slider.js"></script>
+<script>
+
+    new Vue({
+        el: '#default-slider',
+        data: {
+            settings:{
+                timer: true,
+                duration: 5000,
+                speed: 500,
+                slides:[
+                    {
+                        slide:'<img src="http://lorempixel.com/500/500" />'
+                    },
+                    {
+                        slide:'<img src="http://lorempixel.com/500/500/city" />'
+                    },
+                    {
+                        slide:'<img src="http://lorempixel.com/500/500/abstract" />'
+                    },
+                    {
+                        slide:'<img src="http://lorempixel.com/500/500/technics" />'
+                    }
+                ]
+            }
+        }
+    });
+
+</script>
+</body>
+</html>
