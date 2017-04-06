@@ -4,7 +4,7 @@
     margin: 0 auto;
     border: 1px solid #3b3b3b;
     position: relative;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .ultrasites-vue-content-slider-slide{
@@ -17,17 +17,17 @@
     width:auto;
     height: auto;
     position: absolute;
-    top:50%;
+    top:45%;
     cursor: pointer;
     color: white;
 }
 
 .ultrasites-vue-content-slider-button-back{
-    left:0;
+    left:10px;
 }
 
 .ultrasites-vue-content-slider-button-next{
-    right:0;
+    right:10px;
 }
 
 .ultrasites-vue-content-slider{

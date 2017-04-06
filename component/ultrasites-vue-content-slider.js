@@ -59,6 +59,19 @@ Vue.component('ultrasites-vue-content-slider', {
                 $($slider).append($firstSlide);
             });
 
+            $states = $(this.$el).find('.ultrasites-vue-content-slider-state-wrapper').children();
+
+            $($states[this.state]).removeClass('ultrasites-vue-content-slider-state--active');
+             this.state++;
+             if(this.state == this.slides.length){
+                this.state=0;
+            }
+            $($states[this.state]).addClass('ultrasites-vue-content-slider-state--active');
+
+           
+
+            
+
         },
 
         prev: function () {
@@ -71,6 +84,15 @@ Vue.component('ultrasites-vue-content-slider', {
 
             $($slides).last().remove();
             $($slider).prepend($lastSlide);
+
+            $states = $(this.$el).find('.ultrasites-vue-content-slider-state-wrapper').children();
+
+            $($states[this.state]).removeClass('ultrasites-vue-content-slider-state--active');
+             this.state--;
+             if(this.state == 0){
+                this.state=this.slides.length;
+            }
+            $($states[this.state]).addClass('ultrasites-vue-content-slider-state--active');
 
         }
 
