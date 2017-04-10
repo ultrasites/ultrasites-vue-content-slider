@@ -31,7 +31,7 @@
 }
 
 .ultrasites-vue-content-slider{
-    height: 100%;
+    position: relative;
 }
 
 .ultrasites-vue-content-slider-state-wrapper{
@@ -47,6 +47,7 @@
     height: 8px;
     border-radius: 50%;
     border: 1px solid #FFFFFF;
+    cursor: pointer;
 }
 
 .ultrasites-vue-content-slider-state--active{
@@ -54,6 +55,6 @@
 }
 
 .ultrasites-vue-content-slider-state:last-of-type{
-    margin-right: 0px;
+    margin-right: 0;
 }
 
