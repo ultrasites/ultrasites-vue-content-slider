@@ -8,20 +8,20 @@ Create a Vue object with your own settings.
              el: '#default-slider',
              data: {
                  settings:{
-                     leftArrow: '<i class="fa fa-chevron-left" aria-hidden="true">',
-                     rightArrow: '<i class="fa fa-chevron-right" aria-hidden="true">',
+                     leftArrow: 'content for the left arrow',
+                     rightArrow: 'content for the right arrow',
                      slides:[
                          {
-                             slide:'<img src="http://lorempixel.com/500/500" />'
+                             slide:'some content'
                          },
                          {
-                             slide:'<img src="http://lorempixel.com/500/500/city" />'
+                             slide:'some content'
                          },
                          {
-                             slide:'<img src="http://lorempixel.com/500/500/abstract" />'
+                             slide:'some content'
                          },
                          {
-                             slide:'<img src="http://lorempixel.com/500/500/technics" />'
+                             slide:'some content'
                          }
                      ]
                  }
