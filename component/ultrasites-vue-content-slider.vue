@@ -3,8 +3,8 @@ Vue.component('ultrasites-vue-content-slider', {
     '<div class="ultrasites-vue-content-slider">' +
     '<div class="ultrasites-vue-content-slider-slide"  v-for="(content, index) in slides"><div v-html="content.slide"></div></div>' +
     '</div>' +
-    '<div class="ultrasites-vue-content-slider-button-back" v-if="showArrows" v-show="state > 0" @click="prev"><i class="fa fa-chevron-left" aria-hidden="true"></i></div>' +
-    '<div class="ultrasites-vue-content-slider-button-next" v-if="showArrows" v-show="state < slides.length-1" @click="next"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>' +
+    '<div class="ultrasites-vue-content-slider-button-back" v-if="showArrows" v-show="state > 0" @click="prev" v-html="leftArrow"></i></div>' +
+    '<div class="ultrasites-vue-content-slider-button-next" v-if="showArrows" v-show="state < slides.length-1" @click="next" v-html="rightArrow"></i></div>' +
     '<div class="ultrasites-vue-content-slider-state-wrapper" v-if="showState"><div class="ultrasites-vue-content-slider-state" v-for="(content, index) in slides" @click="curState(index)"></div></div>' +
     '</div>',
 
@@ -19,6 +19,8 @@ Vue.component('ultrasites-vue-content-slider', {
         return {
             showArrows: this.settings.showArrows != null ? this.settings.showArrows : true,
             showState: this.settings.showState != null ? this.settings.showState : false,
+            leftArrow: this.settings.leftArrow,
+            rightArrow: this.settings.rightArrow,
             timer: this.settings.timer != null ? this.settings.timer : false,
             duration: this.settings.timer != null ? this.settings.duration : 0,
             slides: this.settings.slides,

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ultrasites-vue-content-slider :: Text Slider</title>
+    <link rel="stylesheet" href="../component/style/ultrasites-vue-content-slider-style.css" />
+    <style>
+        .ultrasites-vue-content-slider-wrapper{
+            width: 400px;
+            height: 50px;
+            border: none;
+        }
+
+        .ultrasites-vue-content-slider-slide{
+            width: 400px;
+        }
+
+        .textbox{
+            width: 400px;
+            height: 50px;
+            text-align: center;
+            color: #282828;
+            font-family: Arial;
+            font-size: 20px;
+            z-index: 9001;
+        }
+
+        .textbox a{
+            z-index: 9001;
+        }
+
+        .ultrasites-vue-content-slider-state{
+            border: 1px solid #282828;
+        }
+
+        .ultrasites-vue-content-slider-state--active{
+            background-color: #282828;
+        }
+    </style>
+</head>
+<body >
+<div id="text-slider">
+    <ultrasites-vue-content-slider :settings="settings"></ultrasites-vue-content-slider>
+</div>
+<script src="../node_modules/jquery/dist/jquery.js"></script>
+<script src="../node_modules/vue/dist/vue.js"></script>
+<script src="../component/ultrasites-vue-content-slider.vue"></script>
+<script>
+
+    new Vue({
+        el: '#text-slider',
+        data: {
+            settings:{
+                showArrows: false,
+                showState: true,
+                timer: true,
+                duration: 3000,
+                slides:[
+                    {
+                        slide:'<div class="textbox">We take some</div>'
+                    },
+                    {
+                        slide:'<div class="textbox">DIFFERENCE!</div>'
+                    },
+                    {
+                        slide:'<div class="textbox">Ultra Sites Medienagentur</div>'
+                    },
+                    {
+                        slide:'<div class="textbox"><a href="http://www.ultra-sites.de" target="_blank">Besuchen Sie uns jetzt!</a></div>'
+                    }
+                ]
+            }
+        }
+    });
+
+</script>
+</body>
+</html>

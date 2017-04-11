@@ -2,12 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>ultrasites-vue-content-slider :: Default Slider</title>
+    <title>ultrasites-vue-content-slider :: Fullscreen Slider</title>
     <link rel="stylesheet" href="../component/style/ultrasites-vue-content-slider-style.css" />
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
 </head>
+<style>
+    .ultrasites-vue-content-slider-wrapper{
+        width: 1024px;
+        height: 800px;
+        border: none;
+    }
+
+    .ultrasites-vue-content-slider-slide{
+        width: 1024px;
+    }
+
+    img{
+        width: 1024px;
+        height: auto;
+    }
+</style>
 <body >
-<div id="default-slider">
+<div id="fullscreen-slider">
     <ultrasites-vue-content-slider :settings="settings"></ultrasites-vue-content-slider>
 </div>
 <script src="../node_modules/jquery/dist/jquery.js"></script>
@@ -16,7 +32,7 @@
 <script>
 
     new Vue({
-        el: '#default-slider',
+        el: '#fullscreen-slider',
         data: {
             settings:{
                 leftArrow: '<i class="fa fa-chevron-left" aria-hidden="true">',

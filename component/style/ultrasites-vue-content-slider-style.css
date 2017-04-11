@@ -20,6 +20,8 @@
     top:45%;
     cursor: pointer;
     color: white;
+    z-index: 9000;
+    text-shadow: 1px 1px 5px #000000;
 }
 
 .ultrasites-vue-content-slider-button-back{
@@ -38,6 +40,8 @@
     position: relative;
     bottom: 30px;
     text-align: center;
+    margin: 0 auto;
+    display: table;
 }
 
 .ultrasites-vue-content-slider-state{
