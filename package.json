@@ -2,7 +2,13 @@
   "name": "ultrasites-vue-content-slider",
   "version": "0.0.1",
   "devDependencies": {
-    "vue":"latest",
-    "jquery":"latest"
+    "gulp": "^3.9.1",
+    "jquery": "latest",
+    "vue": "latest",
+    "gulp-csslint":"latest",
+    "gulp-clean-css":"latest",
+    "gulp-jshint":"latest",
+    "gulp-uglify":"latest",
+    "gulp-concat":"latest"
   }
 }
