@@ -34,6 +34,7 @@
 
 .ultrasites-vue-content-slider{
     position: relative;
+    display: flex;
 }
 
 .ultrasites-vue-content-slider-state-wrapper{

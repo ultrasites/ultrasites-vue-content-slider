@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ultrasites-vue-content-slider :: Fullscreen Slider</title>
+    <link rel="stylesheet" href="component/style/ultrasites-vue-content-slider-style.css" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <style>
+
+        body{
+            margin:0;
+        }
+
+        .ultrasites-vue-content-slider-wrapper{
+            width: 100%;
+            min-height: 100%;
+            position: fixed;
+            border: none;
+
+        }
+
+        .ultrasites-vue-content-slider-slide{
+            width: 100%;
+            min-height: 100%;
+
+        }
+
+        .ultrasites-vue-content-slider-slide img{
+            min-width: 100%;
+            min-height: 100%;
+
+        }
+
+        .ultrasites-vue-content-slider-state-wrapper{
+            bottom: 690px;
+        }
+    </style>
+</head>
+<body>
+<div id="fullscreen-slider">
+    <ultrasites-vue-content-slider :settings="settings"></ultrasites-vue-content-slider>
+</div>
+<script src="vendor.js"></script>
+<script src="component/ultrasites-vue-content-slider.vue"></script>
+<script>
+
+    new Vue({
+        el: '#fullscreen-slider',
+        data: {
+            settings:{
+                leftArrow: '<i class="fa fa-chevron-left" aria-hidden="true">',
+                rightArrow: '<i class="fa fa-chevron-right" aria-hidden="true">',
+                showState: true,
+                timer:true,
+                duration: 5000,
+                slides:[
+                    {
+                        slide:'<img src="http://lorempixel.com/500/500" />'
+                    },
+                    {
+                        slide:'<img src="http://lorempixel.com/500/500/city" />'
+                    },
+                    {
+                        slide:'<img src="http://lorempixel.com/500/500/abstract" />'
+                    },
+                    {
+                        slide:'<img src="http://lorempixel.com/500/500/technics" />'
+                    }
+                ]
+            }
+        }
+    });
+
+</script>
+</body>
+</html>
