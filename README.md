@@ -2,6 +2,9 @@
 
 This is a dynamic content slider based on the Vue framework. You can render any contents, like texts, images or other ones. The slider is developed as a Vue component.
 
+## Dependencies
+jQuery, Vue
+
 Short Example:
 Create a Vue object with your own settings.
 ```javascript
@@ -35,7 +38,7 @@ Paste this in your HTML-Code. The Slider has a **settings** directive.
 <ultrasites-vue-content-slider :settings="settings"></ultrasites-vue-content-slider>
 ```
 
-##Parameters
+## Parameters
 ```javascript
 showArrows:boolean
 ```
@@ -71,7 +74,7 @@ slides[]:array
 ```
 Slides of content.
 
-##Contact
+## Contact
 Ultra Sites Medienagentur<br/>
 Pfingstanger 15<br />
 34434 Borgentreich GERMANY<br/><br/>
