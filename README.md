@@ -3,7 +3,7 @@
 This is a dynamic content slider based on the Vue framework. You can render any contents, like texts, images or other ones. The slider is developed as a Vue component.
 
 ## Dependencies
-jQuery, Vue
+Vue
 
 Short Example:
 Create a Vue object with your own settings.
