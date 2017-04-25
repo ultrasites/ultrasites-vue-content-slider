@@ -1,0 +1,71 @@
+.ultrasites-vue-content-slider-wrapper{
+  width: 500px;
+  height: 500px;
+  margin: 0 auto;
+  border: 1px solid #3b3b3b;
+  position: relative;
+  overflow: hidden;
+
+  .ultrasites-vue-content-slider-slide{
+    width: 500px;
+    height: 100%;
+    float:left;
+  }
+
+  .ultrasites-vue-content-slider-button-back{
+    width:auto;
+    height: auto;
+    position: absolute;
+    top:45%;
+    cursor: pointer;
+    color: white;
+    z-index: 9000;
+    text-shadow: 1px 1px 5px #000000;
+    left:10px;
+  }
+
+  .ultrasites-vue-content-slider-button-next{
+    width:auto;
+    height: auto;
+    position: absolute;
+    top:45%;
+    cursor: pointer;
+    color: white;
+    z-index: 9000;
+    text-shadow: 1px 1px 5px #000000;
+    right:10px;
+  }
+
+  .ultrasites-vue-content-slider{
+    position: relative;
+    display: flex;
+  }
+
+  .ultrasites-vue-content-slider-state-wrapper{
+    position: relative;
+    bottom: 30px;
+    text-align: center;
+    margin: 0 auto;
+    display: table;
+
+    .ultrasites-vue-content-slider-state{
+      display: inline-block;
+      margin-right: 5px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      border: 1px solid #FFFFFF;
+      cursor: pointer;
+
+      &:last-of-type{
+        margin-right: 0;
+      }
+
+      &.activeStateClass{
+        background-color: #FFFFFF;
+      }
+    }
+
+  }
+
+}
