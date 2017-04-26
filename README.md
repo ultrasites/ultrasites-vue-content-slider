@@ -5,7 +5,10 @@ This is a dynamic content slider based on the Vue framework. You can render any 
 ## Dependencies
 Vue
 
-Short Example:
+## Example
+
+Live Example on: https://jsfiddle.net/1qc6o4gk/1/
+
 Create a Vue object with your own settings.
 ```javascript
 new Vue({
