@@ -2,6 +2,9 @@
 
 This is a dynamic content slider based on the Vue framework. You can render any contents, like texts, images or other ones. The slider is developed as a Vue component.
 
+## Changelog
+https://github.com/ultrasites/ultrasites-vue-content-slider/wiki/Changelog
+
 ## Dependencies
 Vue
 
